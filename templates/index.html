@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E‑CarStart · EV Analytics Platform</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0,1" rel="stylesheet">
+    
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Tableau container */
+        .tableau-container {
+            width: 100%;
+            overflow-x: auto;
+            background: white;
+            border-radius: 12px;
+            border: 1px solid #e5e7eb;
+        }
+        
+        /* Active nav link */
+        .nav-link.active {
+            color: #2563eb;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <!-- Fixed Header -->
+    <header class="fixed top-0 left-0 right-0 bg-white border-b border-gray-200 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <!-- Logo -->
+            <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-blue-600 text-3xl">ev_station</span>
+                <span class="text-xl font-bold text-gray-900">E‑CarStart</span>
+            </div>
+            
+            <!-- Navigation -->
+            <nav class="hidden md:flex items-center gap-8">
+                <a href="#home" class="nav-link text-gray-600 hover:text-blue-600 text-sm font-medium">Home</a>
+                <a href="#dashboard" class="nav-link text-gray-600 hover:text-blue-600 text-sm font-medium">Dashboard</a>
+                <a href="#story" class="nav-link text-gray-600 hover:text-blue-600 text-sm font-medium">Story</a>
+                <a href="#insights" class="nav-link text-gray-600 hover:text-blue-600 text-sm font-medium">Insights</a>
+                <a href="#brands" class="nav-link text-gray-600 hover:text-blue-600 text-sm font-medium">Brands</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content with top padding for fixed header -->
+    <main class="pt-20">
+
+        <!-- HOME SECTION -->
+        <section id="home" class="py-16 px-6 bg-white">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h1 class="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-6">
+                            We offer modern <span class="text-blue-600">Analytics solutions</span> for Electric Vehicles
+                        </h1>
+                        <p class="text-lg text-gray-600 mb-8">
+                            Optimize fleet performance, monitor battery health, and scale your EV infrastructure with our cutting-edge data platform.
+                        </p>
+                        <div class="flex gap-4">
+                            <a href="#dashboard" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700">
+                                Explore Dashboard →
+                            </a>
+                            <a href="#story" class="border-2 border-blue-600 text-blue-600 px-6 py-3 rounded-lg font-medium hover:bg-blue-50">
+                                View Story
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bg-blue-50 rounded-2xl p-8 flex justify-center">
+                        <span class="material-symbols-outlined text-blue-600 text-8xl">electric_car</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DASHBOARD SECTION - Updated with new embed ID -->
+        <section id="dashboard" class="py-16 px-6 bg-gray-100">
+            <div class="max-w-7xl mx-auto">
+                <h2 class="text-3xl font-bold text-gray-900 mb-2">⚡ EV Analytics Dashboard</h2>
+                <p class="text-gray-600 mb-8">Real-time monitoring and performance metrics for your EV fleet.</p>
+                
+                <div class="tableau-container p-4 bg-white">
+                    <div class='tableauPlaceholder' id='viz1772730065683' style='position: relative;'>
+                        <object class='tableauViz' style='width: 1230px; height: 2727px; display: block; margin: 0 auto;'>
+                            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                            <param name='embed_code_version' value='3' />
+                            <param name='site_root' value='' />
+                            <param name='name' value='ElectricCarAnalytics_17727194068140/Dashboard1' />
+                            <param name='tabs' value='no' />
+                            <param name='toolbar' value='no' />
+                            <param name='showShareOptions' value='false' />
+                            <param name='static_image' value='https://public.tableau.com/static/images/El/ElectricCarAnalytics_17727194068140/Dashboard1/1.png' />
+                            <param name='animate_transition' value='yes' />
+                            <param name='display_static_image' value='yes' />
+                            <param name='display_spinner' value='yes' />
+                            <param name='display_overlay' value='yes' />
+                            <param name='display_count' value='yes' />
+                            <param name='language' value='en-GB' />
+                        </object>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- STORY SECTION -->
+        <section id="story" class="py-16 px-6 bg-white">
+            <div class="max-w-7xl mx-auto">
+                <h2 class="text-3xl font-bold text-gray-900 mb-2">📖 EV Story · India</h2>
+                <p class="text-gray-600 mb-8">Explore the growth of electric vehicles and charging infrastructure across India.</p>
+                
+                <div class="tableau-container p-4 bg-white">
+                    <div class='tableauPlaceholder' id='viz1772725294967' style='position: relative;'>
+                        <object class='tableauViz' style='width: 1016px; height: 727px; display: block; margin: 0 auto;'>
+                            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                            <param name='embed_code_version' value='3' />
+                            <param name='site_root' value='' />
+                            <param name='name' value='ElectricCarandChargingStationinIndia/StoryofElectricCarinIndia' />
+                            <param name='tabs' value='no' />
+                            <param name='toolbar' value='yes' />
+                            <param name='static_image' value='https://public.tableau.com/static/images/El/ElectricCarandChargingStationinIndia/StoryofElectricCarinIndia/1.png' />
+                            <param name='animate_transition' value='yes' />
+                            <param name='display_static_image' value='yes' />
+                            <param name='display_spinner' value='yes' />
+                            <param name='display_overlay' value='yes' />
+                            <param name='display_count' value='yes' />
+                            <param name='language' value='en-GB' />
+                            <param name='filter' value='publish=yes' />
+                        </object>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- INSIGHTS SECTION -->
+        <section id="insights" class="py-16 px-6 bg-gray-100">
+            <div class="max-w-7xl mx-auto">
+                <h2 class="text-3xl font-bold text-gray-900 text-center mb-12">🔍 Key Insights</h2>
+                
+                <div class="grid md:grid-cols-3 gap-8">
+                    
+                    <!-- Card 1: Charging Stations -->
+                    <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm">
+                        <div class="flex items-center gap-3 mb-4">
+                            <span class="material-symbols-outlined text-blue-600 text-3xl">ev_station</span>
+                            <h3 class="text-xl font-semibold text-gray-900">Charging Stations</h3>
+                        </div>
+                        <p class="text-sm text-gray-500 mb-4">Distribution across India by region</p>
+                        
+                        <div class="space-y-4">
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="font-medium text-gray-700">ANERT</span>
+                                    <span class="text-blue-600 font-semibold">156</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2">
+                                    <div class="bg-blue-600 h-2 rounded-full" style="width: 67%"></div>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="font-medium text-gray-700">CMRL</span>
+                                    <span class="text-blue-600 font-semibold">89</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2">
+                                    <div class="bg-blue-600 h-2 rounded-full" style="width: 38%"></div>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="font-medium text-gray-700">SDMC</span>
+                                    <span class="text-blue-600 font-semibold">234</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2">
+                                    <div class="bg-blue-600 h-2 rounded-full" style="width: 100%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-4 pt-4 border-t border-gray-100">
+                            <div class="flex justify-between">
+                                <span class="text-gray-500">Total Stations</span>
+                                <span class="text-xl font-bold text-gray-900">479</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Card 2: Top Brands -->
+                    <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm">
+                        <div class="flex items-center gap-3 mb-4">
+                            <span class="material-symbols-outlined text-purple-600 text-3xl">directions_car</span>
+                            <h3 class="text-xl font-semibold text-gray-900">Top Brands</h3>
+                        </div>
+                        <p class="text-sm text-gray-500 mb-4">Electric car models by manufacturer</p>
+                        
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between p-2 bg-gray-50 rounded">
+                                <div class="flex items-center gap-2">
+                                    <span class="w-5 h-5 bg-yellow-400 text-white text-xs flex items-center justify-center rounded">1</span>
+                                    <span class="font-medium text-gray-700">Tesla</span>
+                                </div>
+                                <span class="font-semibold text-gray-900">8 models</span>
+                            </div>
+                            
+                            <div class="flex items-center justify-between p-2 bg-gray-50 rounded">
+                                <div class="flex items-center gap-2">
+                                    <span class="w-5 h-5 bg-gray-400 text-white text-xs flex items-center justify-center rounded">2</span>
+                                    <span class="font-medium text-gray-700">Volkswagen</span>
+                                </div>
+                                <span class="font-semibold text-gray-900">6 models</span>
+                            </div>
+                            
+                            <div class="flex items-center justify-between p-2 bg-gray-50 rounded">
+                                <div class="flex items-center gap-2">
+                                    <span class="w-5 h-5 bg-amber-700 text-white text-xs flex items-center justify-center rounded">3</span>
+                                    <span class="font-medium text-gray-700">Renault</span>
+                                </div>
+                                <span class="font-semibold text-gray-900">4 models</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Card 3: Price Analysis -->
+                    <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm">
+                        <div class="flex items-center gap-3 mb-4">
+                            <span class="material-symbols-outlined text-green-600 text-3xl">attach_money</span>
+                            <h3 class="text-xl font-semibold text-gray-900">Price Analysis</h3>
+                        </div>
+                        <p class="text-sm text-gray-500 mb-4">Average prices by brand (INR)</p>
+                        
+                        <div class="space-y-4">
+                            <div class="p-3 bg-gray-50 rounded-lg">
+                                <div class="flex justify-between mb-1">
+                                    <span class="font-medium text-gray-700">Tesla</span>
+                                    <span class="text-xs bg-blue-100 text-blue-600 px-2 py-0.5 rounded">Premium</span>
+                                </div>
+                                <div class="text-lg font-bold text-gray-900">₹65L - ₹1.5Cr</div>
+                            </div>
+                            
+                            <div class="p-3 bg-gray-50 rounded-lg">
+                                <div class="flex justify-between mb-1">
+                                    <span class="font-medium text-gray-700">Volvo</span>
+                                    <span class="text-xs bg-purple-100 text-purple-600 px-2 py-0.5 rounded">Luxury</span>
+                                </div>
+                                <div class="text-lg font-bold text-gray-900">₹55L - ₹90L</div>
+                            </div>
+                            
+                            <div class="p-3 bg-gray-50 rounded-lg">
+                                <div class="flex justify-between mb-1">
+                                    <span class="font-medium text-gray-700">Smart</span>
+                                    <span class="text-xs bg-green-100 text-green-600 px-2 py-0.5 rounded">Compact</span>
+                                </div>
+                                <div class="text-lg font-bold text-gray-900">₹35L - ₹45L</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FEATURED BRANDS SECTION -->
+        <section id="brands" class="py-16 px-6 bg-white">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-12">
+                    <span class="text-blue-600 font-semibold text-sm tracking-wider uppercase">Trusted Partners</span>
+                    <h2 class="text-3xl font-bold text-gray-900 mt-2">Featured Electric Vehicle Brands</h2>
+                    <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Leading manufacturers powered by our analytics platform</p>
+                </div>
+                
+                <!-- Brand Categories -->
+                <div class="grid md:grid-cols-4 gap-8">
+                    <!-- Premium/Luxury Brands -->
+                    <div>
+                        <h3 class="font-semibold text-gray-900 mb-4 pb-2 border-b-2 border-blue-600 inline-block">Premium</h3>
+                        <div class="space-y-3 mt-4">
+                            <div class="flex items-center gap-2 p-2 hover:bg-gray-50 rounded-lg transition">
+                                <span class="w-2 h-2 bg-blue-600 rounded-full"></span>
+                                <span class="text-gray-700">Tesla</span>
+                            </div>
+                            <div class="flex items-center gap-2 p-2 hover:bg-gray-50 rounded-lg transition">
+                                <span class="w-2 h-2 bg-blue-600 rounded-full"></span>
+                                <span class="text-gray-700">Porsche</span>
+                            </div>
+                            <div class="flex items-center gap-2 p-2 hover:bg-gray-50 rounded-lg transition">
+                                <span class="w-2 h-2 bg-blue-600 rounded-full"></span>
+                                <span class="text-gray-700">Lucid</span>
+                            </div>
+                            <div class="flex items-center gap-2 p-2 hover:bg-gray-50 rounded-lg transition">
+                                <span class="w-2 h-2 bg-blue-600 rounded-full"></span>
+                                <span class="text-gray-700">Audi</span>
+                            </div>
+                            <div class="flex items-center gap-2 p-2 hover:bg-gray-50 rounded-lg transition">
+                                <span class="w-2 h-2 bg-blue-600 rounded-full"></span>
+                                <span class="text-gray-700">Mercedes</span>
+                            </div>
+                            <div class="flex items-center gap-2 p-2 hover:bg-gray-50 rounded-lg transition">
+                                <span class="w-2 h-2 bg-blue-600 rounded-full"></span>
+                                <span class="text-gray-700">BMW</span>
+                            </div>
+                            <div class="flex items-center gap-2 p-2 hover:bg-gray-50 rounded-lg transition">
+                                <span class="w-2 h-2 bg-blue-600 rounded-full"></span>
+                                <span class="text-gray-700">Jaguar</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Mainstream Brands -->
+                    <div>
+                        <h3 class="font-semibold text-gray-900 mb-4 pb-2 border-b-2 border-green-600 inline-block">Mainstream</h3>
+                        <div class="space-y-3 mt-4">
+                            <div class="flex items-center gap-2 p-2 hover:bg-gray-50 rounded-lg transition">
+                                <span class="w-2 h-2 bg-green-600 rounded-full"></span>
+                                <span class="text-gray-700">Volkswagen</span>
+                            </div>
+                            <div class="flex items-center gap-2 p-2 hover:bg-gray-50 rounded-lg transition">
+                                <span class="w-2 h-2 bg-green-600 rounded-full"></span>
+                                <span class="text-gray-700">Hyundai</span>
+                            </div>
+                            <div class="flex items-center gap-2 p-2 hover:bg-gray-50 rounded-lg transition">
+                                <span class="w-2 h-2 bg-green-600 rounded-full"></span>
+                                <span class="text-gray-700">Kia</span>
+                            </div>
+                            <div class="flex items-center gap-2 p-2 hover:bg-gray-50 rounded-lg transition">
+                                <span class="w-2 h-2 bg-green-600 rounded-full"></span>
+                                <span class="text-gray-700">Ford</span>
+                            </div>
+                            <div class="flex items-center gap-2 p-2 hover:bg-gray-50 rounded-lg transition">
+                                <span class="w-2 h-2 bg-green-600 rounded-full"></span>
+                                <span class="text-gray-700">Nissan</span>
+                            </div>
+                            <div class="flex items-center gap-2 p-2 hover:bg-gray-50 rounded-lg transition">
+                                <span class="w-2 h-2 bg-green-600 rounded-full"></span>
+                                <span class="text-gray-700">Toyota</span>
+                            </div>
+                            <div class="flex items-center gap-2 p-2 hover:bg-gray-50 rounded-lg transition">
+                                <span class="w-2 h-2 bg-green-600 rounded-full"></span>
+                                <span class="text-gray-700">Honda</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- European Brands -->
+                    <div>
+                        <h3 class="font-semibold text-gray-900 mb-4 pb-2 border-b-2 border-purple-600 inline-block">European</h3>
+                        <div class="space-y-3 mt-4">
+                            <div class="flex items-center gap-2 p-2 hover:bg-gray-50 rounded-lg transition">
+                                <span class="w-2 h-2 bg-purple-600 rounded-full"></span>
+                                <span class="text-gray-700">Volvo</span>
+                            </div>
+                            <div class="flex items-center gap-2 p-2 hover:bg-gray-50 rounded-lg transition">
+                                <span class="w-2 h-2 bg-purple-600 rounded-full"></span>
+                                <span class="text-gray-700">Polestar</span>
+                            </div>
+                            <div class="flex items-center gap-2 p-2 hover:bg-gray-50 rounded-lg transition">
+                                <span class="w-2 h-2 bg-purple-600 rounded-full"></span>
+                                <span class="text-gray-700">Renault</span>
+                            </div>
+                            <div class="flex items-center gap-2 p-2 hover:bg-gray-50 rounded-lg transition">
+                                <span class="w-2 h-2 bg-purple-600 rounded-full"></span>
+                                <span class="text-gray-700">Peugeot</span>
+                            </div>
+                            <div class="flex items-center gap-2 p-2 hover:bg-gray-50 rounded-lg transition">
+                                <span class="w-2 h-2 bg-purple-600 rounded-full"></span>
+                                <span class="text-gray-700">Skoda</span>
+                            </div>
+                            <div class="flex items-center gap-2 p-2 hover:bg-gray-50 rounded-lg transition">
+                                <span class="w-2 h-2 bg-purple-600 rounded-full"></span>
+                                <span class="text-gray-700">SEAT</span>
+                            </div>
+                            <div class="flex items-center gap-2 p-2 hover:bg-gray-50 rounded-lg transition">
+                                <span class="w-2 h-2 bg-purple-600 rounded-full"></span>
+                                <span class="text-gray-700">CUPRA</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Emerging & Specialty -->
+                    <div>
+                        <h3 class="font-semibold text-gray-900 mb-4 pb-2 border-b-2 border-amber-600 inline-block">Emerging</h3>
+                        <div class="space-y-3 mt-4">
+                            <div class="flex items-center gap-2 p-2 hover:bg-gray-50 rounded-lg transition">
+                                <span class="w-2 h-2 bg-amber-600 rounded-full"></span>
+                                <span class="text-gray-700">MG</span>
+                            </div>
+                            <div class="flex items-center gap-2 p-2 hover:bg-gray-50 rounded-lg transition">
+                                <span class="w-2 h-2 bg-amber-600 rounded-full"></span>
+                                <span class="text-gray-700">Smart</span>
+                            </div>
+                            <div class="flex items-center gap-2 p-2 hover:bg-gray-50 rounded-lg transition">
+                                <span class="w-2 h-2 bg-amber-600 rounded-full"></span>
+                                <span class="text-gray-700">Sono</span>
+                            </div>
+                            <div class="flex items-center gap-2 p-2 hover:bg-gray-50 rounded-lg transition">
+                                <span class="w-2 h-2 bg-amber-600 rounded-full"></span>
+                                <span class="text-gray-700">Lightyear</span>
+                            </div>
+                            <div class="flex items-center gap-2 p-2 hover:bg-gray-50 rounded-lg transition">
+                                <span class="w-2 h-2 bg-amber-600 rounded-full"></span>
+                                <span class="text-gray-700">Lotus</span>
+                            </div>
+                            <div class="flex items-center gap-2 p-2 hover:bg-gray-50 rounded-lg transition">
+                                <span class="w-2 h-2 bg-amber-600 rounded-full"></span>
+                                <span class="text-gray-700">Aveyron</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Simple Footer -->
+    <footer class="bg-white border-t border-gray-200 py-6 px-6">
+        <div class="max-w-7xl mx-auto text-center">
+            <p class="text-sm text-gray-500">© 2024 E‑CarStart. All rights reserved ~ Shafiur Choudhary</p>
+        </div>
+    </footer>
+
+    <!-- Tableau Scripts -->
+    <script type='text/javascript'>
+        (function() {
+            // Load dashboard with new ID
+            var dashDiv = document.getElementById('viz1772730065683');
+            if (dashDiv) {
+                var dashScript = document.createElement('script');
+                dashScript.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                document.body.appendChild(dashScript);
+            }
+            
+            // Load story
+            var storyDiv = document.getElementById('viz1772725294967');
+            if (storyDiv) {
+                var storyScript = document.createElement('script');
+                storyScript.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                document.body.appendChild(storyScript);
+            }
+        })();
+    </script>
+</body>
+</html>
