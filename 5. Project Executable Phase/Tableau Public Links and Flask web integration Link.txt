@@ -3,4 +3,4 @@ Story Link: https://public.tableau.com/shared/28BCZ26DN?:display_count=n&:origin
 Dashboards Link: https://public.tableau.com/views/ElectricCarAnalytics_17727194068140/Dashboard1?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
 
 Website with Tableau embeded code: https://ecarstart.onrender.com 
-(Flask Folder not added in this phase because i hosted the website directly, flash folders files are at the bottom of the repository)
+(All files added in 5. Project Executable Phase/Flask folder)
